@@ -5,8 +5,14 @@
     <classes>
       <class name="pages.CheckoutWithPeriodicService">
         <methods>
+          <include name="verifyItemTotal"/>
           <include name="selectDateTime"/>
+          <include name="checkout"/>
+          <include name="applyCouponGoappMoney"/>
           <include name="setUp"/>
+          <include name="checkoutwithoutaddon"/>
+          <include name="checkoutButton"/>
+          <include name="loginWithTrueCaller"/>
         </methods>
       </class> <!-- pages.CheckoutWithPeriodicService -->
     </classes>

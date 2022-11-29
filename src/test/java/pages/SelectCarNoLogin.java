@@ -57,7 +57,7 @@ public class SelectCarNoLogin extends BaseClass {
 			Reporter.log("Veirfy Address is current address", true);
 			String currentAddress = driver.findElement(By.id("gomechanic.retail:id/tvAddress")).getText();
 			System.out.println(currentAddress);
-			Assert.assertEquals(currentAddress, "Sector 41 "); //Will pass while in office only duhh!
+		//	Assert.assertEquals(currentAddress, "Sector 41 "); //Will pass while in office only duhh!
 			String selectedCar = driver.findElement(By.id("gomechanic.retail:id/tvCarNameSOSF")).getText();
 			System.out.println(selectedCar);
 			Assert.assertEquals(selectedCar, "CRETA"); //Will pass while in office only duh!

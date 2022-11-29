@@ -34,6 +34,7 @@ public class CheckoutWithPeriodicService extends BaseClass {
 				.click();
 		wait.until(ExpectedConditions
 				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='ADD TO CART']")))).click();
+		driver.findElement(By.xpath("//android.widget.TextView[@text='Synthetic Oil']")).click();
 	}
 
 	@Test(priority = 4)

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OrderingSuite" >
+<listeners>
+        <listener class-name="utils.AnnotationTransformer"/>
+    </listeners>
+  <test name="RetailOrder">
+  </test><!-- Test -->
+    <test name="AppOrdering">
+    <classes>
+      <class name="pages.CheckoutWithPeriodicService"/>
+      <class name="pages.CheckoutWithACService"/>
+      <class name="pages.CheckoutWithBattery"/>
+      <class name="pages.CheckoutWithTyre"/>
+    </classes>
+  </test><!-- Test -->
+</suite> <!-- Suite -->
