@@ -1,59 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Veirfy Address is current address]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-29T14:11:44 IST" name="Default suite" finished-at="2022-11-29T14:13:52 IST" duration-ms="128453">
+  <suite started-at="2022-11-30T15:32:27 IST" name="Default suite" finished-at="2022-11-30T15:34:08 IST" duration-ms="101021">
     <groups>
     </groups>
-    <test started-at="2022-11-29T14:11:44 IST" name="Default test" finished-at="2022-11-29T14:13:52 IST" duration-ms="128453">
-      <class name="pages.CheckoutWithPeriodicService">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pages.CheckoutWithPeriodicService@247310d0]" started-at="2022-11-29T14:11:44 IST" name="setUp" finished-at="2022-11-29T14:12:00 IST" duration-ms="16416" status="PASS">
+    <test started-at="2022-11-30T15:32:27 IST" name="Default test" finished-at="2022-11-30T15:34:08 IST" duration-ms="101021">
+      <class name="pages.CheckoutWithTyre">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:32:27 IST" name="setUp" finished-at="2022-11-30T15:32:42 IST" duration-ms="14946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="sampleTest()[pri:0, instance:pages.CheckoutWithPeriodicService@247310d0]" started-at="2022-11-29T14:12:00 IST" name="sampleTest" finished-at="2022-11-29T14:12:00 IST" duration-ms="8" status="PASS">
+        <test-method signature="sampleTest()[pri:0, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:32:42 IST" name="sampleTest" finished-at="2022-11-30T15:32:42 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sampleTest -->
-        <test-method signature="addPeriodicService()[pri:3, instance:pages.CheckoutWithPeriodicService@247310d0]" started-at="2022-11-29T14:12:00 IST" name="addPeriodicService" finished-at="2022-11-29T14:12:36 IST" duration-ms="35615" status="PASS">
+        <test-method signature="addAcService()[pri:3, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:32:42 IST" name="addAcService" finished-at="2022-11-30T15:33:16 IST" duration-ms="34280" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Veirfy Address is current address]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addPeriodicService -->
-        <test-method signature="checkoutwithoutaddon()[pri:4, instance:pages.CheckoutWithPeriodicService@247310d0]" started-at="2022-11-29T14:12:36 IST" name="checkoutwithoutaddon" finished-at="2022-11-29T14:12:54 IST" duration-ms="18203" status="PASS">
+        </test-method> <!-- addAcService -->
+        <test-method signature="checkoutwithoutaddon()[pri:4, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:16 IST" name="checkoutwithoutaddon" finished-at="2022-11-30T15:33:25 IST" duration-ms="8585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutwithoutaddon -->
-        <test-method signature="checkout()[pri:5, instance:pages.CheckoutWithPeriodicService@247310d0]" started-at="2022-11-29T14:12:54 IST" name="checkout" finished-at="2022-11-29T14:12:55 IST" duration-ms="1389" status="PASS">
+        <test-method signature="checkout()[pri:5, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:25 IST" name="checkout" finished-at="2022-11-30T15:33:26 IST" duration-ms="1807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkout -->
-        <test-method signature="loginWithTrueCaller()[pri:6, instance:pages.CheckoutWithPeriodicService@247310d0]" started-at="2022-11-29T14:12:55 IST" name="loginWithTrueCaller" finished-at="2022-11-29T14:13:07 IST" duration-ms="11516" status="PASS">
+        <test-method signature="loginWithTrueCaller()[pri:6, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:26 IST" name="loginWithTrueCaller" finished-at="2022-11-30T15:33:37 IST" duration-ms="10289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithTrueCaller -->
-        <test-method signature="verifyItemTotal()[pri:7, instance:pages.CheckoutWithPeriodicService@247310d0]" started-at="2022-11-29T14:13:07 IST" name="verifyItemTotal" finished-at="2022-11-29T14:13:17 IST" duration-ms="10427" status="PASS">
+        <test-method signature="verifyItemTotal()[pri:7, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:37 IST" name="verifyItemTotal" finished-at="2022-11-30T15:33:50 IST" duration-ms="13370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyItemTotal -->
-        <test-method signature="applyCouponGoappMoney()[pri:8, instance:pages.CheckoutWithPeriodicService@247310d0]" started-at="2022-11-29T14:13:17 IST" name="applyCouponGoappMoney" finished-at="2022-11-29T14:13:33 IST" duration-ms="16248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applyCouponGoappMoney -->
-        <test-method signature="checkoutButton()[pri:9, instance:pages.CheckoutWithPeriodicService@247310d0]" started-at="2022-11-29T14:13:33 IST" name="checkoutButton" finished-at="2022-11-29T14:13:35 IST" duration-ms="1144" status="PASS">
+        <test-method signature="checkoutButton()[pri:9, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:50 IST" name="checkoutButton" finished-at="2022-11-30T15:33:51 IST" duration-ms="1039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutButton -->
-        <test-method signature="selectDateTime()[pri:10, instance:pages.CheckoutWithPeriodicService@247310d0]" started-at="2022-11-29T14:13:35 IST" name="selectDateTime" finished-at="2022-11-29T14:13:52 IST" duration-ms="17421" status="PASS">
+        <test-method signature="selectDateTime()[pri:10, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:51 IST" name="selectDateTime" finished-at="2022-11-30T15:34:08 IST" duration-ms="16637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDateTime -->
-      </class> <!-- pages.CheckoutWithPeriodicService -->
+      </class> <!-- pages.CheckoutWithTyre -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

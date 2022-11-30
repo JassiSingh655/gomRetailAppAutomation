@@ -55,7 +55,7 @@ public class CheckoutWithACService extends BaseClass {
 		}
 		String CartItem = driver.findElement(By.id("gomechanic.retail:id/tvCartItemTitle")).getText();
 		System.out.println(CartItem);
-		Assert.assertEquals("", CartItem);
+		Assert.assertEquals("High Performance AC Service", CartItem);
 
 	}
 

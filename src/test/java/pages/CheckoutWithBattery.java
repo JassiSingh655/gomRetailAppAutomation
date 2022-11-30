@@ -15,7 +15,7 @@ public class CheckoutWithBattery extends SelectCarNoLogin{
 	SelectCarNoLogin scl = new SelectCarNoLogin();
 
 	@Test(priority = 3)
-	public void addAcService() {
+	public void addBatteryService() {
 
 		scl.clickSelectCarButton();
 		scl.HomePageVeirfy();

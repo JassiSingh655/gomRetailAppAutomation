@@ -3,18 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pages.CheckoutWithPeriodicService">
+      <class name="pages.CheckoutWithTyre">
         <methods>
-          <include name="verifyItemTotal"/>
-          <include name="selectDateTime"/>
-          <include name="checkout"/>
-          <include name="applyCouponGoappMoney"/>
           <include name="setUp"/>
-          <include name="checkoutwithoutaddon"/>
-          <include name="checkoutButton"/>
-          <include name="loginWithTrueCaller"/>
+          <include name="selectDateTime"/>
+          <include name="applyCouponGoappMoney"/>
         </methods>
-      </class> <!-- pages.CheckoutWithPeriodicService -->
+      </class> <!-- pages.CheckoutWithTyre -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
