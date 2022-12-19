@@ -1,55 +1,596 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="3" failed="8" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Veirfy Address is current address]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-30T15:32:27 IST" name="Default suite" finished-at="2022-11-30T15:34:08 IST" duration-ms="101021">
+  <suite started-at="2022-12-05T12:25:41 IST" name="Default suite" finished-at="2022-12-05T12:26:31 IST" duration-ms="50045">
     <groups>
     </groups>
-    <test started-at="2022-11-30T15:32:27 IST" name="Default test" finished-at="2022-11-30T15:34:08 IST" duration-ms="101021">
-      <class name="pages.CheckoutWithTyre">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:32:27 IST" name="setUp" finished-at="2022-11-30T15:32:42 IST" duration-ms="14946" status="PASS">
+    <test started-at="2022-12-05T12:25:41 IST" name="Default test" finished-at="2022-12-05T12:26:31 IST" duration-ms="50045">
+      <class name="pages.CheckoutWithBattery">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:25:41 IST" name="setUp" finished-at="2022-12-05T12:25:56 IST" duration-ms="14869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="sampleTest()[pri:0, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:32:42 IST" name="sampleTest" finished-at="2022-11-30T15:32:42 IST" duration-ms="6" status="PASS">
+        <test-method signature="sampleTest()[pri:0, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:25:56 IST" name="sampleTest" finished-at="2022-12-05T12:25:56 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sampleTest -->
-        <test-method signature="addAcService()[pri:3, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:32:42 IST" name="addAcService" finished-at="2022-11-30T15:33:16 IST" duration-ms="34280" status="PASS">
+        <test-method signature="clickSelectCarButton()[pri:1, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:25:56 IST" name="clickSelectCarButton" finished-at="2022-12-05T12:26:21 IST" duration-ms="24984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSelectCarButton -->
+        <test-method signature="HomePageVeirfy()[pri:2, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:26:21 IST" name="HomePageVeirfy" finished-at="2022-12-05T12:26:24 IST" duration-ms="2510" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Veirfy Address is current address]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addAcService -->
-        <test-method signature="checkoutwithoutaddon()[pri:4, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:16 IST" name="checkoutwithoutaddon" finished-at="2022-11-30T15:33:25 IST" duration-ms="8585" status="PASS">
+        </test-method> <!-- HomePageVeirfy -->
+        <test-method signature="addBatteryService()[pri:3, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:26:24 IST" name="addBatteryService" finished-at="2022-12-05T12:26:24 IST" duration-ms="220" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=id, value=gomechanic.retail:id/tvSelectYourCarOBF}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=id, value=gomechanic.retail:id/tvSelectYourCarOBF}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at pages.SelectCarNoLogin.clickSelectCarButton(SelectCarNoLogin.java:21)
+at pages.CheckoutWithBattery.addBatteryService(CheckoutWithBattery.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBatteryService -->
+        <test-method signature="checkoutwithoutaddon()[pri:4, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:26:24 IST" name="checkoutwithoutaddon" finished-at="2022-12-05T12:26:24 IST" duration-ms="216" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=id, value=gomechanic.retail:id/ivBackSDPF}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=id, value=gomechanic.retail:id/ivBackSDPF}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at pages.CheckoutWithBattery.checkoutwithoutaddon(CheckoutWithBattery.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutwithoutaddon -->
-        <test-method signature="checkout()[pri:5, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:25 IST" name="checkout" finished-at="2022-11-30T15:33:26 IST" duration-ms="1807" status="PASS">
+        <test-method signature="checkout()[pri:5, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:26:24 IST" name="checkout" finished-at="2022-12-05T12:26:25 IST" duration-ms="486" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=xpath, value=//android.widget.TextView[@text='Proceed to Checkout']}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=xpath, value=//android.widget.TextView[@text='Proceed to Checkout']}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at pages.CheckoutWithBattery.checkout(CheckoutWithBattery.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkout -->
-        <test-method signature="loginWithTrueCaller()[pri:6, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:26 IST" name="loginWithTrueCaller" finished-at="2022-11-30T15:33:37 IST" duration-ms="10289" status="PASS">
+        <test-method signature="loginWithTrueCaller()[pri:6, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:26:25 IST" name="loginWithTrueCaller" finished-at="2022-12-05T12:26:30 IST" duration-ms="5440" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=xpath, value=//android.widget.TextView[@text='CONTINUE WITH 8800906221']}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=xpath, value=//android.widget.TextView[@text='CONTINUE WITH 8800906221']}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at pages.CheckoutWithBattery.loginWithTrueCaller(CheckoutWithBattery.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithTrueCaller -->
-        <test-method signature="verifyItemTotal()[pri:7, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:37 IST" name="verifyItemTotal" finished-at="2022-11-30T15:33:50 IST" duration-ms="13370" status="PASS">
+        <test-method signature="verifyItemTotal()[pri:7, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:26:30 IST" name="verifyItemTotal" finished-at="2022-12-05T12:26:30 IST" duration-ms="217" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=id, value=gomechanic.retail:id/tvTotalCartAmountCF}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=id, value=gomechanic.retail:id/tvTotalCartAmountCF}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at pages.CheckoutWithBattery.verifyItemTotal(CheckoutWithBattery.java:94)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyItemTotal -->
-        <test-method signature="checkoutButton()[pri:9, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:50 IST" name="checkoutButton" finished-at="2022-11-30T15:33:51 IST" duration-ms="1039" status="PASS">
+        <test-method signature="applyCouponGoappMoney()[pri:8, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:26:30 IST" name="applyCouponGoappMoney" finished-at="2022-12-05T12:26:31 IST" duration-ms="199" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=id, value=gomechanic.retail:id/tvCoupon}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=id, value=gomechanic.retail:id/tvCoupon}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at pages.CheckoutWithBattery.applyCouponGoappMoney(CheckoutWithBattery.java:108)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyCouponGoappMoney -->
+        <test-method signature="checkoutButton()[pri:9, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:26:31 IST" name="checkoutButton" finished-at="2022-12-05T12:26:31 IST" duration-ms="400" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=xpath, value=//android.widget.TextView[@text='CHECKOUT']}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=xpath, value=//android.widget.TextView[@text='CHECKOUT']}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at pages.CheckoutWithBattery.checkoutButton(CheckoutWithBattery.java:141)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutButton -->
-        <test-method signature="selectDateTime()[pri:10, instance:pages.CheckoutWithTyre@7c37508a]" started-at="2022-11-30T15:33:51 IST" name="selectDateTime" finished-at="2022-11-30T15:34:08 IST" duration-ms="16637" status="PASS">
+        <test-method signature="selectDateTime()[pri:10, instance:pages.CheckoutWithBattery@303cf2ba]" started-at="2022-12-05T12:26:31 IST" name="selectDateTime" finished-at="2022-12-05T12:26:31 IST" duration-ms="428" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=xpath, value=//android.widget.TextView[@text='CHECKOUT']}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0.1', java.version: '11.0.16.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a, findElement {using=xpath, value=//android.widget.TextView[@text='CHECKOUT']}]
+Capabilities {appium:appActivity: gomechanic.retail.HomeActivity, appium:appPackage: gomechanic.retail, appium:autoGrantPermissions: true, appium:automationName: Appium, appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {appActivity: gomechanic.retail.HomeActivity, appPackage: gomechanic.retail, autoGrantPermissions: true, automationName: Appium, connectHardwareKeyboard: true, deviceName: Redmi 9A, newCommandTimeout: 3600, noReset: false, platformName: android, platformVersion: 10 QP1A.190711.020, udid: PV4HBUTG5XYXYPMN}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2006C3LI, appium:deviceName: PV4HBUTG5XYXYPMN, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: PV4HBUTG5XYXYPMN, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:noReset: false, appium:pixelRatio: 2, appium:platformVersion: 10, appium:statBarHeight: 55, appium:takesScreenshot: true, appium:udid: PV4HBUTG5XYXYPMN, appium:viewportRect: {height: 1394, left: 0, top: 55, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9aa9b2c-d5b0-4fd9-a557-4b3e1f80106a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at pages.CheckoutWithBattery.selectDateTime(CheckoutWithBattery.java:149)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDateTime -->
-      </class> <!-- pages.CheckoutWithTyre -->
+      </class> <!-- pages.CheckoutWithBattery -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

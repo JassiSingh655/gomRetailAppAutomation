@@ -8,19 +8,20 @@
     <classes>
       <class name="pages.CheckoutWithACService">
         <methods>
+          <include name="verifyItemTotal"/>
+          <include name="applyCouponGoappMoney"/>
           <include name="setUp"/>
-          <include name="checkoutwithoutaddon"/>
         </methods>
       </class> <!-- pages.CheckoutWithACService -->
       <class name="pages.CheckoutWithBattery">
         <methods>
-          <include name="addAcService"/>
+          <include name="addBatteryService"/>
           <include name="selectDateTime"/>
           <include name="checkoutButton"/>
-          <include name="checkoutwithoutaddon"/>
           <include name="loginWithTrueCaller"/>
-          <include name="setUp"/>
+          <include name="checkoutwithoutaddon"/>
           <include name="checkout"/>
+          <include name="setUp"/>
           <include name="verifyItemTotal"/>
           <include name="applyCouponGoappMoney"/>
         </methods>
@@ -33,11 +34,23 @@
           <include name="loginWithTrueCaller"/>
           <include name="setUp"/>
           <include name="selectDateTime"/>
-          <include name="applyCouponGoappMoney"/>
           <include name="verifyItemTotal"/>
           <include name="checkoutwithoutaddon"/>
         </methods>
       </class> <!-- pages.CheckoutWithTyre -->
+      <class name="pages.CheckoutWithPeriodicService">
+        <methods>
+          <include name="verifyItemTotal"/>
+          <include name="selectDateTime"/>
+          <include name="checkout"/>
+          <include name="applyCouponGoappMoney"/>
+          <include name="setUp"/>
+          <include name="checkoutwithoutaddon"/>
+          <include name="checkoutButton"/>
+          <include name="addPeriodicService"/>
+          <include name="loginWithTrueCaller"/>
+        </methods>
+      </class> <!-- pages.CheckoutWithPeriodicService -->
     </classes>
   </test> <!-- AppOrdering(failed) -->
 </suite> <!-- Failed suite [OrderingSuite] -->
