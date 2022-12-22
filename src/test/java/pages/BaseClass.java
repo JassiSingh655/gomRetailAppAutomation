@@ -66,9 +66,9 @@ public void verticalSwipe() {
 	int startYCoordinate= (int)(height*.7);
 	int endYCoordinate= (int)(height*.2);
 					
-	action.press(PointOption.point(middleOfX, startYCoordinate))
-	.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2)))
-	.moveTo(PointOption.point(middleOfX, endYCoordinate)).release().perform();
+//	action.press(PointOption.point(middleOfX, startYCoordinate))
+//	.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2)))
+//	.moveTo(PointOption.point(middleOfX, endYCoordinate)).release().perform();
 }
 	
 }

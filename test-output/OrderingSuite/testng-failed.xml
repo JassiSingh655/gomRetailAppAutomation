@@ -6,11 +6,30 @@
   </listeners>
   <test thread-count="5" name="AppOrdering(failed)">
     <classes>
+      <class name="pages.CheckoutWithClutchBodyPartsService">
+        <methods>
+          <include name="applyCouponGoappMoney"/>
+          <include name="verifyItemTotal"/>
+          <include name="checkout"/>
+          <include name="addAcService"/>
+          <include name="selectDateTime"/>
+          <include name="setUp"/>
+          <include name="checkoutwithoutaddon"/>
+          <include name="checkoutButton"/>
+          <include name="loginWithTrueCaller"/>
+        </methods>
+      </class> <!-- pages.CheckoutWithClutchBodyPartsService -->
       <class name="pages.CheckoutWithACService">
         <methods>
           <include name="verifyItemTotal"/>
           <include name="applyCouponGoappMoney"/>
+          <include name="checkout"/>
+          <include name="selectDateTime"/>
           <include name="setUp"/>
+          <include name="addAcService"/>
+          <include name="checkoutwithoutaddon"/>
+          <include name="loginWithTrueCaller"/>
+          <include name="checkoutButton"/>
         </methods>
       </class> <!-- pages.CheckoutWithACService -->
       <class name="pages.CheckoutWithBattery">
@@ -26,31 +45,60 @@
           <include name="applyCouponGoappMoney"/>
         </methods>
       </class> <!-- pages.CheckoutWithBattery -->
-      <class name="pages.CheckoutWithTyre">
+      <class name="pages.CheckoutWithDetailingService">
         <methods>
+          <include name="checkoutwithoutaddon"/>
+          <include name="checkoutButton"/>
+          <include name="loginWithTrueCaller"/>
+          <include name="verifyItemTotal"/>
+          <include name="setUp"/>
+          <include name="applyCouponGoappMoney"/>
+          <include name="addDetailingService"/>
+          <include name="checkout"/>
+          <include name="selectDateTime"/>
+        </methods>
+      </class> <!-- pages.CheckoutWithDetailingService -->
+      <class name="pages.CheckoutWithWindshieldLightsService">
+        <methods>
+          <include name="HomePageVeirfy"/>
+          <include name="selectDateTime"/>
+          <include name="verifyItemTotal"/>
+          <include name="checkout"/>
+          <include name="loginWithTrueCaller"/>
+          <include name="checkoutwithoutaddon"/>
+          <include name="setUp"/>
+          <include name="checkoutButton"/>
+          <include name="sampleTest"/>
+          <include name="clickSelectCarButton"/>
+          <include name="addAcService"/>
+        </methods>
+      </class> <!-- pages.CheckoutWithWindshieldLightsService -->
+      <class name="pages.CheckoutWithInsuranceClaimsService">
+        <methods>
+          <include name="applyCouponGoappMoney"/>
+          <include name="verifyItemTotal"/>
           <include name="checkout"/>
           <include name="addAcService"/>
+          <include name="selectDateTime"/>
+          <include name="setUp"/>
+          <include name="checkoutwithoutaddon"/>
           <include name="checkoutButton"/>
           <include name="loginWithTrueCaller"/>
-          <include name="setUp"/>
-          <include name="selectDateTime"/>
-          <include name="verifyItemTotal"/>
-          <include name="checkoutwithoutaddon"/>
         </methods>
-      </class> <!-- pages.CheckoutWithTyre -->
-      <class name="pages.CheckoutWithPeriodicService">
+      </class> <!-- pages.CheckoutWithInsuranceClaimsService -->
+      <class name="pages.CheckoutWithSuspensionFitments">
         <methods>
-          <include name="verifyItemTotal"/>
-          <include name="selectDateTime"/>
-          <include name="checkout"/>
-          <include name="applyCouponGoappMoney"/>
-          <include name="setUp"/>
-          <include name="checkoutwithoutaddon"/>
           <include name="checkoutButton"/>
-          <include name="addPeriodicService"/>
+          <include name="checkoutwithoutaddon"/>
           <include name="loginWithTrueCaller"/>
+          <include name="addAcService"/>
+          <include name="selectDateTime"/>
+          <include name="setUp"/>
+          <include name="applyCouponGoappMoney"/>
+          <include name="verifyItemTotal"/>
+          <include name="checkout"/>
         </methods>
-      </class> <!-- pages.CheckoutWithPeriodicService -->
+      </class> <!-- pages.CheckoutWithSuspensionFitments -->
     </classes>
   </test> <!-- AppOrdering(failed) -->
 </suite> <!-- Failed suite [OrderingSuite] -->

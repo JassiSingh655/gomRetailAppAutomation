@@ -10,18 +10,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckoutWithPeriodicService extends BaseClass {
-
+public class CheckoutWithWindshieldLightsService extends SelectCarNoLogin{
+	
 	SelectCarNoLogin scl = new SelectCarNoLogin();
 
 	@Test(priority = 3)
-	public void addPeriodicService() {
+	public void addAcService() {
 
 		scl.clickSelectCarButton();
 		scl.HomePageVeirfy();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions
-				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Periodic Services']"))))
+				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Tyres & Wheel Care']"))))
 				.click();
 		try {
 			Thread.sleep(5000);
@@ -29,32 +29,23 @@ public class CheckoutWithPeriodicService extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		wait.until(ExpectedConditions
-				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Standard Service']"))))
+		wait.until(ExpectedConditions.visibilityOf(
+				driver.findElement(By.xpath("//android.widget.TextView[@text='ADD']"))))
 				.click();
-		wait.until(ExpectedConditions
-				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='ADD TO CART']")))).click();
-		driver.findElement(By.xpath("//android.widget.TextView[@text='Synthetic Oil']")).click();
+//		wait.until(ExpectedConditions
+//				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='ADD TO CART']")))).click();
+
 	}
 
 	@Test(priority = 4)
 	public void checkoutwithoutaddon() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		wait.until(ExpectedConditions
-				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='ADD TO CART']")))).click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		driver.findElement(By.id("gomechanic.retail:id/ivBackSDPF")).click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		driver.findElement(By.id("gomechanic.retail:id/ivBackSDPF")).click();
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		driver.findElement(By.id("gomechanic.retail:id/tvViewCartTextLOS")).click();
 		try {
 			Thread.sleep(5000);
@@ -64,7 +55,7 @@ public class CheckoutWithPeriodicService extends BaseClass {
 		}
 		String CartItem = driver.findElement(By.id("gomechanic.retail:id/tvCartItemTitle")).getText();
 		System.out.println(CartItem);
-		Assert.assertEquals("Standard Service", CartItem);
+		Assert.assertEquals("Apollo Apterra HP", CartItem);
 
 	}
 
@@ -111,37 +102,37 @@ public class CheckoutWithPeriodicService extends BaseClass {
 		}
 	}
 
-	@Test(priority = 8)
-	public void applyCouponGoappMoney() {
-
-		driver.findElement(By.id("gomechanic.retail:id/tvCoupon")).click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		// driver.findElement(By.id("gomechanic.retail:id/tvApplyCouponCF[4]")).click();
-//		List<WebElement> applyButtons = driver.findElements(By.id("gomechanic.retail:id/tvApplyCouponCF"));
-//        System.out.println(applyButtons.size());
-//		applyButtons.get(1).click();
-		driver.findElement(By.id("gomechanic.retail:id/tvApplyCouponCF")).click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		String couponSuccessMessage = driver.findElement(By.id("gomechanic.retail:id/tvCongratsDSCN")).getText();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		Assert.assertEquals(couponSuccessMessage, "GoAppMoney Applied");
-		// driver.findElement(By.id("gomechanic.retail:id/tvCoupon")).click();
-	}
+//	@Test(priority = 8)
+//	public void applyCouponGoappMoney() {
+//
+//		driver.findElement(By.id("gomechanic.retail:id/tvCoupon")).click();
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		// driver.findElement(By.id("gomechanic.retail:id/tvApplyCouponCF[4]")).click();
+////		List<WebElement> applyButtons = driver.findElements(By.id("gomechanic.retail:id/tvApplyCouponCF"));
+////        System.out.println(applyButtons.size());
+////		applyButtons.get(1).click();
+//		driver.findElement(By.id("gomechanic.retail:id/tvApplyCouponCF")).click();
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		String couponSuccessMessage = driver.findElement(By.id("gomechanic.retail:id/tvCongratsDSCN")).getText();
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		Assert.assertEquals(couponSuccessMessage, "GoAppMoney Applied");
+//		// driver.findElement(By.id("gomechanic.retail:id/tvCoupon")).click();
+//	}
 
 	@Test(priority = 9)
 	public void checkoutButton() {
@@ -181,5 +172,7 @@ public class CheckoutWithPeriodicService extends BaseClass {
 				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Google Pay']")))).click();
 
 	}
+	
+	
 
 }

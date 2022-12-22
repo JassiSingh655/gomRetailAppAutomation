@@ -10,18 +10,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckoutWithPeriodicService extends BaseClass {
-
+public class CheckoutWithClutchBodyPartsService extends SelectCarNoLogin{
+	
 	SelectCarNoLogin scl = new SelectCarNoLogin();
 
 	@Test(priority = 3)
-	public void addPeriodicService() {
+	public void addAcService() {
 
 		scl.clickSelectCarButton();
 		scl.HomePageVeirfy();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions
-				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Periodic Services']"))))
+				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='AC Service & Repair']"))))
 				.click();
 		try {
 			Thread.sleep(5000);
@@ -29,25 +29,16 @@ public class CheckoutWithPeriodicService extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		wait.until(ExpectedConditions
-				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Standard Service']"))))
+		wait.until(ExpectedConditions.visibilityOf(
+				driver.findElement(By.xpath("//android.widget.TextView[@text='High Performance AC Service']"))))
 				.click();
 		wait.until(ExpectedConditions
 				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='ADD TO CART']")))).click();
-		driver.findElement(By.xpath("//android.widget.TextView[@text='Synthetic Oil']")).click();
+
 	}
 
 	@Test(priority = 4)
 	public void checkoutwithoutaddon() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		wait.until(ExpectedConditions
-				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='ADD TO CART']")))).click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		driver.findElement(By.id("gomechanic.retail:id/ivBackSDPF")).click();
 		try {
 			Thread.sleep(5000);
@@ -64,7 +55,7 @@ public class CheckoutWithPeriodicService extends BaseClass {
 		}
 		String CartItem = driver.findElement(By.id("gomechanic.retail:id/tvCartItemTitle")).getText();
 		System.out.println(CartItem);
-		Assert.assertEquals("Standard Service", CartItem);
+		Assert.assertEquals("High Performance AC Service", CartItem);
 
 	}
 

@@ -10,18 +10,30 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckoutWithPeriodicService extends BaseClass {
-
+public class CheckoutWithCarSpaCleaningService extends SelectCarNoLogin{
+	
 	SelectCarNoLogin scl = new SelectCarNoLogin();
 
 	@Test(priority = 3)
-	public void addPeriodicService() {
+	public void addCarSpaCleaning() {
 
 		scl.clickSelectCarButton();
 		scl.HomePageVeirfy();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		wait.until(ExpectedConditions
-				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Periodic Services']"))))
+				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Car Spa & Cleaning']"))))
 				.click();
 		try {
 			Thread.sleep(5000);
@@ -30,24 +42,15 @@ public class CheckoutWithPeriodicService extends BaseClass {
 			e.printStackTrace();
 		}
 		wait.until(ExpectedConditions
-				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Standard Service']"))))
+				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Winter Care Package']"))))
 				.click();
 		wait.until(ExpectedConditions
 				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='ADD TO CART']")))).click();
-		driver.findElement(By.xpath("//android.widget.TextView[@text='Synthetic Oil']")).click();
+
 	}
 
 	@Test(priority = 4)
 	public void checkoutwithoutaddon() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		wait.until(ExpectedConditions
-				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='ADD TO CART']")))).click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		driver.findElement(By.id("gomechanic.retail:id/ivBackSDPF")).click();
 		try {
 			Thread.sleep(5000);
@@ -64,13 +67,19 @@ public class CheckoutWithPeriodicService extends BaseClass {
 		}
 		String CartItem = driver.findElement(By.id("gomechanic.retail:id/tvCartItemTitle")).getText();
 		System.out.println(CartItem);
-		Assert.assertEquals("Standard Service", CartItem);
+		Assert.assertEquals("High Performance AC Service", CartItem);
 
 	}
 
 	@Test(priority = 5)
 	public void checkout() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		wait.until(ExpectedConditions
 				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Proceed to Checkout']"))))
 				.click();

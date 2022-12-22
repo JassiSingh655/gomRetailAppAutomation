@@ -12,6 +12,12 @@
       <class name="pages.CheckoutWithACService"/>
       <class name="pages.CheckoutWithBattery"/>
       <class name="pages.CheckoutWithTyre"/>
+      <class name="pages.CheckoutWithClutchBodyPartsService"/>
+      <class name="pages.CheckoutWithDetailingService"/>
+      <class name="pages.CheckoutWithInsuranceClaimsService"/>
+      <class name="pages.CheckoutWithPeriodicService"/>
+      <class name="pages.CheckoutWithSuspensionFitments"/>
+      <class name="pages.CheckoutWithWindshieldLightsService"/>     
     </classes>
   </test><!-- Test -->
 </suite> <!-- Suite -->
