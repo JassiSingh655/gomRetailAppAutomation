@@ -36,7 +36,7 @@ public class BaseClass {
 		desiredCapabilities.setCapability("appActivity", "gomechanic.retail.HomeActivity");
 		desiredCapabilities.setCapability("udid", "PV4HBUTG5XYXYPMN");
 		desiredCapabilities.setCapability("noReset", false);
-		desiredCapabilities.setCapability("newCommandTimeout", 3600);
+		desiredCapabilities.setCapability("newCommandTimeout", 4800);
 		desiredCapabilities.setCapability("connectHardwareKeyboard", true);
 		desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.APPIUM);
 		desiredCapabilities.setCapability("autoGrantPermissions", "true");

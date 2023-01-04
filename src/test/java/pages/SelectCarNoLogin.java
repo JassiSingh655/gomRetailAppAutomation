@@ -39,14 +39,20 @@ public class SelectCarNoLogin extends BaseClass {
 				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Automatic']")))).click();
 		wait.until(ExpectedConditions
 				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Petrol']")))).click();
-		wait.until(ExpectedConditions
-				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Save']")))).click();
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+//		wait.until(ExpectedConditions
+//				.visibilityOf(driver.findElement(By.xpath("//android.widget.TextView[@text='Save']")))).click();
+//		try {
+//			Thread.sleep(10000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 
 	@Test(priority=2)

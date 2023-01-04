@@ -60,7 +60,6 @@
       </class> <!-- pages.CheckoutWithDetailingService -->
       <class name="pages.CheckoutWithWindshieldLightsService">
         <methods>
-          <include name="HomePageVeirfy"/>
           <include name="selectDateTime"/>
           <include name="verifyItemTotal"/>
           <include name="checkout"/>
@@ -68,8 +67,6 @@
           <include name="checkoutwithoutaddon"/>
           <include name="setUp"/>
           <include name="checkoutButton"/>
-          <include name="sampleTest"/>
-          <include name="clickSelectCarButton"/>
           <include name="addAcService"/>
         </methods>
       </class> <!-- pages.CheckoutWithWindshieldLightsService -->

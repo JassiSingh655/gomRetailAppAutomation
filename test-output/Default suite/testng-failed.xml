@@ -3,19 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pages.CheckoutWithCarSpaCleaningService">
+      <class name="pages.AccessoriesHomePage">
         <methods>
-          <include name="loginWithTrueCaller"/>
-          <include name="checkout"/>
-          <include name="checkoutButton"/>
+          <include name="openAccessoriesPage"/>
           <include name="setUp"/>
-          <include name="selectDateTime"/>
-          <include name="checkoutwithoutaddon"/>
-          <include name="applyCouponGoappMoney"/>
-          <include name="addCarSpaCleaning"/>
-          <include name="verifyItemTotal"/>
         </methods>
-      </class> <!-- pages.CheckoutWithCarSpaCleaningService -->
+      </class> <!-- pages.AccessoriesHomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
